@@ -20,7 +20,7 @@ public class GeminiService {
     /* TODO : will do it with REDIS once platform code is ready and deployed*/
     private final Map<String, List<String>> memory = new HashMap<>();
 
-    public GeminiService(@Value("AIzaSyDatGtjcApVymnduRXjwk2OObpKupcNdW4") String apiKey) {
+    public GeminiService(@Value("${GEMINI_API_KEY}") String apiKey) {
         this.apiKey = apiKey;
         this.webClient = WebClient.builder()
                 .baseUrl("https://generativelanguage.googleapis.com/v1beta/models")
