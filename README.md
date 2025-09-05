@@ -21,7 +21,9 @@ This is a Spring Boot application that connects to **Google Gemini API**.
 4. Test API:
 
    ```bash
-   curl -X POST http://localhost:8080/api/ask         -H "Content-Type: application/json"         -d '{"prompt":"Explain quantum computing in simple words"}'
+   curl -X POST http://localhost:8080/api/ask/session1 \
+     -H "Content-Type: application/json" \
+     -d '{"prompt":"whats my name"}'
    ```
 
 ## Notes
