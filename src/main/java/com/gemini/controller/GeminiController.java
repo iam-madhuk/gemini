@@ -1,6 +1,6 @@
-package com.example.gemini.controller;
+package com.gemini.controller;
 
-import com.example.gemini.service.GeminiService;
+import com.gemini.service.GeminiService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
